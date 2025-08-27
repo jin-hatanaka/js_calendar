@@ -37,9 +37,7 @@ console.log('日 月 火 水 木 金 土');
 let calendar = '';
 
 // 1日までの位置を揃えるようにスペースを表示
-for (let i = 1; i < dayOfWeek; i++) {
-  calendar += '   ';
-}
+calendar += '   '.repeat(dayOfWeek - 1);
 
 for (let date = 1; date <= lastDay.getDate(); date++) {
   // 2桁右詰め
